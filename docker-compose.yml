@@ -6,4 +6,7 @@ services:
     volumes:
       - ./data:/data
     ports:
-      - '9008:8080'
+      - '9008:9008'
+      - '25432:25432'
+    env_file:
+      - .env
